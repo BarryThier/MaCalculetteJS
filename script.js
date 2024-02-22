@@ -2,7 +2,7 @@ const appendToDisplay = (value) => {
     document.getElementById('display').value += value;
 };
 const calculate = () => {
-    let result = eval(document.getElementById('display').value);
+    let result = eval(document.getElementById('display').value).toFixed(2);
     document.getElementById('display').value = result;
 };
 const appendToClear = () => {
